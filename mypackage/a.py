@@ -1,4 +1,5 @@
 A_MODULE_VAR = 42
+A_DERIVED_MODULE_VAR = A_MODULE_VAR * 2
 QUERY_DATABASE_DEFAULT_VALUE = 1000000
 
 
@@ -16,7 +17,6 @@ def function_with_inner_function():
 
     x = inner_func()
     return x
-
 
 def function_with_local_alias():
     my_fn_alias = query_database
